@@ -1,0 +1,34 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <?php wp_enqueue_script("jquery"); ?>
+  <?php wp_head(); ?>
+</head>
+<body>
+
+  <nav class="navbar  navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="<?php echo site_url(); ?>">
+          <?php bloginfo('name'); ?>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <?php
+          wp_nav_menu( array(
+            'menu' => 'Primary Menu',
+            'items_wrap' => '<ul id="%1$s" class="nav navbar-nav navbar-right %2$s">%3$s</ul>'
+          ) );
+          ?>
+      </div>
+    </div>
+  </nav>
