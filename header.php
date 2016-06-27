@@ -1,7 +1,7 @@
 <!doctype html>
 <head>
   <meta charset="utf-8">
-  <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
+  <title><?php wp_title('|',1,'right'); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
 
@@ -21,6 +21,15 @@
         <a class="navbar-brand" href="<?php echo site_url(); ?>">
           <?php bloginfo('name'); ?>
         </a>
+
+
+        <p class="blog-description">
+          <svg height="25" width="25">
+            <line x1="25" y1="0" x2="0" y2="25" style="stroke:rgb(255,0,0);stroke-width:1" />
+            Sorry, your browser does not support inline SVG.
+          </svg>
+
+          <?php bloginfo('description'); ?></p>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <?php

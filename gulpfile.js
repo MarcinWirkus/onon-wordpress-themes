@@ -4,7 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
-var cleanCSS = require('gulp-clean-css');
+//var cleanCSS = require('gulp-clean-css');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
@@ -14,7 +14,7 @@ gulp.task('sass', function () {
 			browsers: ['last 2 versions'],
 			cascade: false
 		}))
-    .pipe(cleanCSS())
+    //.pipe(cleanCSS())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./'));
 });

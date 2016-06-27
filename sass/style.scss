@@ -65,6 +65,11 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
     font-size: 2.7em;
     background-color: $color-white;
   }
+  .blog-description {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
 }
 
 .frontpost {
@@ -126,6 +131,37 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
       a {color: $color-dark; text-decoration: none;}
       a:hover { color: $color-red; text-decoration: none; }
     }
+    .meta {
+      position: absolute;;
+      right: 5px;
+      top: 5px;
+      border-bottom: 1px dashed $color-white;
+      .author {
+          background-color: #fff;
+          padding: 4px 7px 3px 7px;
+      }
+      ul {
+        margin-bottom: 2px;
+        display: inline-block;
+        -webkit-padding-start: 0px;
+        li {
+          list-style: none;
+          font-weight: 400;
+          font-size: 0.9em;
+          text-transform:uppercase;
+          padding: 3px 7px 2px 7px;
+          display: inline-block;
+          margin-left: 2px;
+          background-color: $color-red;
+          a {
+            color: $color-white; text-decoration: none;
+          }
+
+        }
+      }
+
+
+    }
   }
   .text {
       font-size: 1.45em;
@@ -150,10 +186,12 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
       font-size: 3.5em;
       line-height: 1em;
       text-align: left;
-      padding: 20px 20px;
+      padding: 15px 20px 10px;
       font-weight: 700;
       color: $color-dark;
       background-color: rgba($color-white,0.8);
+      border-radius: 2px;
+      border-bottom: 5px solid #F1404B;
     }
   }
 
@@ -265,7 +303,7 @@ ul.menu {
 }
 
 footer {
-  background-color: rgba($color-dark,0.7);
+  background-color: rgba($color-dark,1);
   border-top: 5px solid $color-red;
   color: $color-white;
   position: relative;

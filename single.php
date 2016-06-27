@@ -11,6 +11,7 @@
       ?>
 
       <div class="header-bg" style="background-image:url(<?=$url?>);">
+        <p><?php the_author(); ?></p>
         <h1><?php the_title(); ?></h1>
       </div>
 
@@ -43,14 +44,10 @@
                 <div class="link"><?php next_post_link( '<strong>%link</strong>' ); ?></div>
               </div>
             </div>
-            
+
             <hr>
             Komentarze:
             <?php comments_template(); ?>
-
-
-
-
 
 
           <?php endwhile; else: ?>
