@@ -5,6 +5,8 @@
 	<div class="row page">
 		<div class="col-md-9">
 
+      <h1><?php single_cat_title(); ?></h1>
+
 			<?php
 			$qry[1] = 1;
 			$qry[2] = 12;
@@ -13,8 +15,8 @@
 
 			$onum = ($qry['total'] * ($paged - 1));
 			$offset = ($paged > 1) ? ($onum) : 0;
-
-			query_posts("posts_per_page=$qry[total]&paged=$paged&showposts=$qry[1]&offset=$offset");
+      $categoryvariable = $cat;
+			query_posts("cat=' . $categoryvariable . '&posts_per_page=$qry[total]&paged=$paged&showposts=$qry[1]&offset=$offset");
 			if (have_posts()) :
 				while (have_posts()) : the_post();
 
@@ -40,7 +42,7 @@
 			// Total in first query, plus any offset, if there is one
 			$offset = $qry[1] + (($paged > 1) ? $onum : 0);
 
-			query_posts("posts_per_page=$qry[total]&offset=$offset&showposts=$qry[2]");
+			query_posts("cat=' . $categoryvariable . '&posts_per_page=$qry[total]&offset=$offset&showposts=$qry[2]");
 			if (have_posts()) :
 				while (have_posts()) : the_post();
 				?>
