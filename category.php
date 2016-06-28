@@ -5,7 +5,7 @@
 	<div class="row page">
 		<div class="col-md-9">
 
-      <h1><?php single_cat_title(); ?></h1>
+      <h1 class="header-category"><?php single_cat_title(); ?></h1>
 
 			<?php
 			$qry[1] = 1;

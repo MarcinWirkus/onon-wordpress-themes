@@ -1,11 +1,11 @@
 /*
 Theme Name: ONON.pl
-Theme URI: http://onon.pl
-Description: ONON.pl temat / bootstrap
+Theme URI: https://github.com/MarcinWirkus/onon-wordpress-themes
+Description: ONON.pl wordpress theme / bootstrap
 Author: Marcin Wirkus
 Author URI: http://inkre.pl/
 Version: 1.0
-Tags: responsive,  bootstrap
+Tags: responsive,  bootstrap, theme, free
 
 License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
 License URI: http://creativecommons.org/licenses/by-sa/3.0/
@@ -300,6 +300,11 @@ ul.menu {
 
 .page {
   margin-top: 80px;
+  .header-category {
+    font-weight: 100;
+    font-size: 2em;
+    text-transform: lowercase;
+  }
 }
 
 footer {

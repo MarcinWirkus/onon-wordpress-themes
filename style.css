@@ -6000,6 +6000,10 @@ ul.menu {
 
 .page {
   margin-top: 80px; }
+  .page .header-category {
+    font-weight: 100;
+    font-size: 2em;
+    text-transform: lowercase; }
 
 footer {
   background-color: #252c41;
