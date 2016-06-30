@@ -104,16 +104,16 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
   }
 }
 
-.featuredpost {
+.featuredpost, .singlepost {
   margin: 0 0 20px 0;
-
+  
   .header {
     height: 30vh;
     background-position: center center;
     background-size: cover;
     position: relative;
     border-radius: 2px;
-    h2 {
+    h1, h2 {
       position: absolute;
       bottom: 10px;
       left: 20px;
@@ -137,8 +137,8 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
       top: 5px;
       border-bottom: 1px dashed $color-white;
       .author {
-          background-color: #fff;
-          padding: 4px 7px 3px 7px;
+        background-color: #fff;
+        padding: 4px 7px 3px 7px;
       }
       ul {
         margin-bottom: 2px;
@@ -164,40 +164,13 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
     }
   }
   .text {
-      font-size: 1.45em;
-      padding: 10px;
-      border-bottom: 1px solid $color-gray-light;
+    font-size: 1.45em;
+    padding: 10px;
+    border-bottom: 1px solid $color-gray-light;
   }
 }
 
 .singlepost {
-
-  .header-bg {
-    height: 30vh;
-    background-position: center center;
-    background-size: cover;
-    margin: 20px 0;
-    position: relative;
-
-    h1 {
-      position: absolute;
-      bottom: 10px;
-      left: 20px;
-      font-size: 3.5em;
-      line-height: 1em;
-      text-align: left;
-      padding: 15px 20px 10px;
-      font-weight: 700;
-      color: $color-dark;
-      background-color: rgba($color-white,0.8);
-      border-radius: 2px;
-      border-bottom: 5px solid #F1404B;
-    }
-  }
-
-
-
-
 
   .time {
     //background-color: $color-gray-light;
@@ -302,7 +275,8 @@ ul.menu {
   margin-top: 80px;
   .header-category {
     font-weight: 100;
-    font-size: 2em;
+    font-size: 2.2em;
+    padding-left: 50px;
     text-transform: lowercase;
   }
 }

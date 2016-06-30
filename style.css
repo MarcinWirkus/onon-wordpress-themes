@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /*
 Theme Name: ONON.pl
-Theme URI: http://onon.pl
-Description: ONON.pl temat / bootstrap
+Theme URI: https://github.com/MarcinWirkus/onon-wordpress-themes
+Description: ONON.pl wordpress theme / bootstrap
 Author: Marcin Wirkus
 Author URI: http://inkre.pl/
 Version: 1.0
-Tags: responsive,  bootstrap
+Tags: responsive,  bootstrap, theme, free
 
 License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
 License URI: http://creativecommons.org/licenses/by-sa/3.0/
@@ -5828,15 +5828,15 @@ a img.aligncenter {
   .frontpost .text {
     padding: 15px; }
 
-.featuredpost {
+.featuredpost, .singlepost {
   margin: 0 0 20px 0; }
-  .featuredpost .header {
+  .featuredpost .header, .singlepost .header {
     height: 30vh;
     background-position: center center;
     background-size: cover;
     position: relative;
     border-radius: 2px; }
-    .featuredpost .header h2 {
+    .featuredpost .header h1, .featuredpost .header h2, .singlepost .header h1, .singlepost .header h2 {
       position: absolute;
       bottom: 10px;
       left: 20px;
@@ -5850,28 +5850,28 @@ a img.aligncenter {
       background-color: rgba(255, 255, 255, 0.8);
       border-bottom: 5px solid #F1404B;
       transition: all 0.3s; }
-      .featuredpost .header h2:hover {
+      .featuredpost .header h1:hover, .featuredpost .header h2:hover, .singlepost .header h1:hover, .singlepost .header h2:hover {
         border-bottom: 5px solid #252c41;
         transition: all 0.3s; }
-      .featuredpost .header h2 a {
+      .featuredpost .header h1 a, .featuredpost .header h2 a, .singlepost .header h1 a, .singlepost .header h2 a {
         color: #252c41;
         text-decoration: none; }
-      .featuredpost .header h2 a:hover {
+      .featuredpost .header h1 a:hover, .featuredpost .header h2 a:hover, .singlepost .header h1 a:hover, .singlepost .header h2 a:hover {
         color: #F1404B;
         text-decoration: none; }
-    .featuredpost .header .meta {
+    .featuredpost .header .meta, .singlepost .header .meta {
       position: absolute;
       right: 5px;
       top: 5px;
       border-bottom: 1px dashed #fff; }
-      .featuredpost .header .meta .author {
+      .featuredpost .header .meta .author, .singlepost .header .meta .author {
         background-color: #fff;
         padding: 4px 7px 3px 7px; }
-      .featuredpost .header .meta ul {
+      .featuredpost .header .meta ul, .singlepost .header .meta ul {
         margin-bottom: 2px;
         display: inline-block;
         -webkit-padding-start: 0px; }
-        .featuredpost .header .meta ul li {
+        .featuredpost .header .meta ul li, .singlepost .header .meta ul li {
           list-style: none;
           font-weight: 400;
           font-size: 0.9em;
@@ -5880,33 +5880,13 @@ a img.aligncenter {
           display: inline-block;
           margin-left: 2px;
           background-color: #F1404B; }
-          .featuredpost .header .meta ul li a {
+          .featuredpost .header .meta ul li a, .singlepost .header .meta ul li a {
             color: #fff;
             text-decoration: none; }
-  .featuredpost .text {
+  .featuredpost .text, .singlepost .text {
     font-size: 1.45em;
     padding: 10px;
     border-bottom: 1px solid #F4F5F9; }
-
-.singlepost .header-bg {
-  height: 30vh;
-  background-position: center center;
-  background-size: cover;
-  margin: 20px 0;
-  position: relative; }
-  .singlepost .header-bg h1 {
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-    font-size: 3.5em;
-    line-height: 1em;
-    text-align: left;
-    padding: 15px 20px 10px;
-    font-weight: 700;
-    color: #252c41;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 2px;
-    border-bottom: 5px solid #F1404B; }
 
 .singlepost .time {
   background: #F4F5F9;
@@ -6002,7 +5982,8 @@ ul.menu {
   margin-top: 80px; }
   .page .header-category {
     font-weight: 100;
-    font-size: 2em;
+    font-size: 2.2em;
+    padding-left: 50px;
     text-transform: lowercase; }
 
 footer {

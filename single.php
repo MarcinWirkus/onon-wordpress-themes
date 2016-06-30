@@ -10,8 +10,8 @@
       $url = $thumb['0'];
       ?>
 
-      <div class="header-bg" style="background-image:url(<?=$url?>);">
-        <p><?php the_author(); ?></p>
+      <div class="header" style="background-image:url(<?=$url?>);">
+        <div class="meta"><span class="author"><?php the_author_link(); ?></span> / <?php the_category(); ?></div>
         <h1><?php the_title(); ?></h1>
       </div>
 
