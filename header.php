@@ -15,9 +15,15 @@
 </head>
 <body>
 
-  <nav class="navbar  navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Rozwiń nawigację</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
         <a class="navbar-brand" href="<?php echo site_url(); ?>">
           <?php bloginfo('name'); ?>
         </a>

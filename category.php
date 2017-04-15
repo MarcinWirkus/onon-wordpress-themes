@@ -24,10 +24,10 @@
 				$url = $thumb1['0'];
 				?>
 
-					<div class="col-md-12 featuredpost">
+					<div class="featured-post">
 						<div class="header" style="background-image:url(<?=$url?>);">
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							<div class="meta"><span class="author"><?php the_author_link(); ?></span> / <?php the_category(); ?></div>
+							<div class="header-meta"><span class="header-meta__author"><?php the_author_link(); ?></span> / <?php the_category(); ?></div>
 						</div>
 						<div class="text">
 							<?php the_excerpt(); ?>
