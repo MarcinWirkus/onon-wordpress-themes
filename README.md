@@ -5,3 +5,11 @@ demo: http://www.mwcode.pl
 licence: MIT
 dev: Marcin Wirkus
 biz: www.inkre.pl
+
+## install
+1. copy or clone this project
+2. run npm install or yarn
+3. run gulp watch
+
+## version
+* v.0.2 - changed responsive web design, modified scss style
