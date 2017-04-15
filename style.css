@@ -5881,6 +5881,15 @@ a img.aligncenter {
       background-color: rgba(255, 255, 255, 0.8);
       border-bottom: 5px solid #F1404B;
       transition: all 0.3s; }
+      @media (min-width: 768px) {
+        .featured-post .header h1, .featured-post .header h2, .singlepost .header h1, .singlepost .header h2 {
+          position: absolute;
+          bottom: 10px;
+          left: 20px;
+          font-size: 2.5em; } }
+      @media (min-width: 1200px) {
+        .featured-post .header h1, .featured-post .header h2, .singlepost .header h1, .singlepost .header h2 {
+          font-size: 3.5em; } }
       .featured-post .header h1:hover, .featured-post .header h2:hover, .singlepost .header h1:hover, .singlepost .header h2:hover {
         border-bottom: 5px solid #252c41;
         transition: all 0.3s; }
@@ -5893,12 +5902,6 @@ a img.aligncenter {
       @media (min-width: 640px) {
         .featured-post .header h1, .featured-post .header h2, .singlepost .header h1, .singlepost .header h2 {
           font-size: 2em; } }
-      @media (min-width: 768px) {
-        .featured-post .header h1, .featured-post .header h2, .singlepost .header h1, .singlepost .header h2 {
-          position: absolute;
-          bottom: 10px;
-          left: 20px;
-          font-size: 3.5em; } }
     .featured-post .header-meta, .singlepost .header-meta {
       position: absolute;
       right: 5px;
@@ -5932,6 +5935,9 @@ a img.aligncenter {
     @media (min-width: 768px) {
       .featured-post .text, .singlepost .text {
         font-size: 1.45em; } }
+
+.singlepost .header {
+  margin-bottom: 20px; }
 
 .singlepost .time {
   background: #F4F5F9;
