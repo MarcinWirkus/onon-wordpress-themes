@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Overpass';
+    src: url('fonts/overpass/overpass-regular.woff2') format('woff2'),
+    url('fonts/overpass/overpass-regular.woff2') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('fonts/overpass/overpass-bold.woff2') format('woff2'),
+    url('fonts/overpass/overpass-bold.woff2') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('fonts/overpass/overpass-extrabold.woff2') format('woff2'),
+    url('fonts/overpass/overpass-extrabold.woff2') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('fonts/overpass/overpass-light.woff2') format('woff2'),
+    url('fonts/overpass/overpass-light.woff2') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('fonts/overpass/overpass-thin.woff2') format('woff2'),
+    url('fonts/overpass/overpass-thin.woff2') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+$font-main: 'Overpass', sans-serif;

@@ -18,8 +18,6 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("http://overpass-30e2.kxcdn.com/overpass.css");
-@import url("http://overpass-30e2.kxcdn.com/overpass.css");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5749,13 +5747,43 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+@font-face {
+  font-family: 'Overpass';
+  src: url("fonts/overpass/overpass-regular.woff2") format("woff2"), url("fonts/overpass/overpass-regular.woff2") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Overpass';
+  src: url("fonts/overpass/overpass-bold.woff2") format("woff2"), url("fonts/overpass/overpass-bold.woff2") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Overpass';
+  src: url("fonts/overpass/overpass-extrabold.woff2") format("woff2"), url("fonts/overpass/overpass-extrabold.woff2") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Overpass';
+  src: url("fonts/overpass/overpass-light.woff2") format("woff2"), url("fonts/overpass/overpass-light.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Overpass';
+  src: url("fonts/overpass/overpass-thin.woff2") format("woff2"), url("fonts/overpass/overpass-thin.woff2") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
 html {
   background-image: linear-gradient(60deg, rgba(244, 245, 249, 0.5) 25%, transparent 0), linear-gradient(350deg, rgba(221, 223, 230, 0.5) 20%, transparent 0);
   background-position: center center;
   background-size: cover; }
 
 body {
-  font-family: overpass, sans-serif;
+  font-family: "Overpass", sans-serif;
   font-size: 15px;
   background: none; }
 
